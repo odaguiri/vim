@@ -1,14 +1,16 @@
-
 " System Default
 set nocompatible
-filetype off 
 
-syntax on
+syntax enable
 set tabstop=2
 set softtabstop=2
 set shiftwidth=2
 set expandtab
 set number
+
+" background
+autocmd ColorScheme janah highlight Normal ctermbg=235
+colorscheme janah
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -18,6 +20,8 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'slim-template/vim-slim.git'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
