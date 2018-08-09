@@ -69,6 +69,8 @@ Plugin 'kien/ctrlp.vim'
 Bundle 'vim-ruby/vim-ruby'
 Plugin 'Yggdroot/indentLine'
 Plugin 'mhinz/vim-signify'
+Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'tpope/vim-rails'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -130,3 +132,5 @@ set foldlevelstart=20
 autocmd Syntax rb,html normal zR
 nnoremap <silent> <Space> @=(foldlevel('.')?'za':"\<Space>")<CR>
 vnoremap <Space> zf
+
+" Tmux
