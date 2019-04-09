@@ -105,7 +105,7 @@ let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes':[],'passive_f
 
 " Tests
 "let test#ruby#rspec#executable = 'docker-compose -f ~/Projects/cerc/docker-compose.test.yml run core bundle exec rspec'
-"let test#ruby#rspec#executable = 'docker-compose run core bundle exec rspec'
+let test#ruby#rspec#executable = 'docker-compose run --rm core bundle exec rspec'
 nmap <silent> <leader>t :TestNearest<CR>
 nmap <silent> <leader>T :TestFile<CR>
 nmap <silent> <leader>a :TestSuite<CR>
